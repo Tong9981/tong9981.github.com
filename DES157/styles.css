@@ -15,6 +15,10 @@ header {
 
 /****************** Body **********************/
 
+h2 {
+    color: rgb(0, 0, 0);
+}
+
 ul li {
     list-style-type: none;
 }
@@ -25,11 +29,13 @@ ul li a {
     display:block;
     line-height:36px;
     padding:0 10px;
+    color: rgb(255, 156, 75);
 }
 
 ul li a:hover{
     background:lightblue;
     border-radius: 10px;
+    color: rgb(87, 165, 255);
 }
 
 #container {

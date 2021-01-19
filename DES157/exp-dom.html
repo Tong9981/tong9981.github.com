@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation - Functions & DOM</title>
+    <style>
+        body{
+            text-align: center;
+            background-color:#99CCCC;
+        }
+
+        header{
+            margin-top: 20%;
+        }
+        em{
+            color: #FF6666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dinner Selector</h1>
+        <h2>Hello, <em id = "p1">customer</em>, would you like some <em id = "p2">Pizza</em>?</h2>
+    </header>
+    <script>
+        /*This program will change the background color of the web page and 
+        randomly recommend dinner for customers.*/
+        //Enter name
+        var yourName = prompt("Provide your name", "");
+        function hello(yourName){
+
+            var greeting;
+
+            if(yourName == null || yourName == ""){
+                greeting = "Customer";
+            }
+            else{
+                greeting = `${yourName}`;
+            }
+
+            return greeting;
+        }
+        document.getElementById("p1").innerHTML=(hello(yourName));
+        
+        //Choose dinner
+        var dishes = ['Chinese food', 'French food', 'Mexico food', 'Korean food', 'Japanese food', 'Hamburg', 'Pizza'];
+
+        function randomInt( min, max ){ 
+            return Math.floor( (max - min + 1) * Math.random())+min;
+        }
+
+        function hospitality(dishes){ 
+            var randomDinner = dishes[randomInt(0, dishes.length-1)];
+            return randomDinner;
+            
+        }
+        document.getElementById("p2").innerHTML=hospitality(dishes);
+        
+        //Choose background color
+        var color =['#99CCCCC', '#CCCCCC', '#CCCCFF', '#CCFFCC'];
+
+        function changeStyle(color){
+            var randomColor = color[randomInt(0, color.length-1)];
+
+            return randomColor;
+        }
+        document.body.style.backgroundColor=changeStyle(color);
+
+    </script>
+    
+    
+</body>
+</html>
