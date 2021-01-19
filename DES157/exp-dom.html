@@ -11,10 +11,37 @@
         }
 
         header{
-            margin-top: 20%;
+            margin-top: 10%;
         }
         em{
             color: #FF6666;
+        }
+
+        main{
+            margin-top: 7%;
+
+        }
+
+        h3 {
+            color: #FFCCCC;
+
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            margin: auto;
+            width: 800px;
+            padding: 30px;
+            margin-bottom: 5%;
+            
+        }
+
+        #container > div {
+            padding: 1%;
+            background-color: rgba(31, 31, 31, 0.3);
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -22,6 +49,61 @@
     <header>
         <h1>Dinner Selector</h1>
         <h2>Hello, <em id = "p1">customer</em>, would you like some <em id = "p2">Pizza</em>?</h2>
+
+        <main>
+            <div id="container">
+                <div>
+                    <h3>Chinese food</h3>
+                    <p>Hotpot</p>
+                    <p>Dumplings</p>
+                    <p>Chow Mein</p>                 
+                </div>
+                <div> 
+                    <h3>French food</h3>
+                    <p>Cassoulet</p>
+                    <p>Boeuf bourguignon</p>
+                    <p>Chocolate soufflé</p>              
+                </div>
+                <div>
+                    <h3>Mexico food</h3>
+                    <p>Tacos</p>
+                    <p>Taco al pastor</p>
+                    <p>Taquitos</p>
+                </div>
+                <div>
+                    <h3>Korean food</h3>
+                    <p>Hoeddeok</p>
+                    <p>Bulgogi</p>
+                    <p>Kimchi</p>                  
+                </div>
+                <div> 
+                    <h3>Japanese food</h3>
+                    <p>Yakitori</p>
+                    <p>Tempura</p>
+                    <p>Ramen</p>             
+                </div>
+                <div>
+                    <h3>Hamburg</h3>
+                    <p>Beef Burgers</p>
+                    <p>Turkey Burgers</p>
+                    <p>Elk Burgers</p>
+                </div>
+                <div>
+                    <h3>Pizza</h3>
+                    <p>Neapolitan Pizza</p>
+                    <p>Chicago Pizza</p>
+                    <p>Greek Pizz</p>
+                </div>
+                <div>
+                    <h3>Vietnam food</h3>
+                    <p>Pho</p>
+                    <p>Cha ca</p>
+                    <p>Banh xeo</p>
+                </div>
+            </div>
+    
+    
+        </main>
     </header>
     <script>
         /*This program will change the background color of the web page and 
@@ -44,7 +126,7 @@
         document.getElementById("p1").innerHTML=(hello(yourName));
         
         //Choose dinner
-        var dishes = ['Chinese food', 'French food', 'Mexico food', 'Korean food', 'Japanese food', 'Hamburg', 'Pizza'];
+        var dishes = ['Chinese food', 'French food', 'Mexico food', 'Korean food', 'Japanese food', 'Hamburg', 'Pizza', 'Vietnam food'];
 
         function randomInt( min, max ){ 
             return Math.floor( (max - min + 1) * Math.random())+min;
@@ -66,6 +148,12 @@
             return randomColor;
         }
         document.body.style.backgroundColor=changeStyle(color);
+
+        //Color for title
+        text = document.getElements ("h3"); 
+        for( var i=0; i<text.length; i++){ 
+            text[i].style.color = "h3";
+        }
 
     </script>
     

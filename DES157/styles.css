@@ -114,11 +114,11 @@ ul li a:hover{
 
 footer {
     display: flex;
-    padding: 40px 0px 40px 30%;
+    padding: 40px 0px 40px 29%;
     background: rgb(162,126,126);
     color: #022B3A;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 1vw;
+    font-size: 16px;
     text-align: center;
     list-style-type: none;
 }
