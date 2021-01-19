@@ -29,13 +29,13 @@ ul li a {
     display:block;
     line-height:36px;
     padding:0 10px;
-    color: rgb(255, 156, 75);
+    color: #FFFFCC;
 }
 
 ul li a:hover{
     background:lightblue;
     border-radius: 10px;
-    color: rgb(87, 165, 255);
+    color: #FF6666;
 }
 
 #container {
