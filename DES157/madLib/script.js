@@ -17,7 +17,7 @@
         console.log(stars);
         for (let i = 0; i < starCount; i++) {
             let left = Math.floor(Math.random() * window.innerWidth);
-            let top = Math.floor(Math.random() * window.innerHeight/1.5);
+            let top = Math.floor(Math.random() * window.innerHeight/2);
             stars[i].style.left = left + 'px';
             stars[i].style.top = top + 'px';
             stars[i].style.animationDelay = Math.floor(Math.random().toFixed(1) * i) + 's';
