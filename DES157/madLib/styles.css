@@ -1,4 +1,3 @@
-
 body {
   background: radial-gradient(200% 100% at bottom center, #f7f7b6, #e96f92, #75517d, #1b2947);
   background: radial-gradient(220% 105% at top center, #1b2947 10%, #75517d 40%, #e96f92 65%, #7d3cd1);
@@ -6,30 +5,22 @@ body {
   overflow: hidden;
 }
 
-  
-.container2 {
+
+#container {
   border-radius: 30px;
-	margin: auto;
-	width: 50%;
+  margin: auto;
+  width: 50%;
+  height: auto;
   border: 5px solid rgb(255,250,244);
   padding-top: 40px;
-  padding-bottom:80px;
+  padding-bottom: 40px;
   margin-bottom: 5%;
-  margin-top: 5%;
+  margin-top: 9%;
   text-align: center;
   box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
 }
 
 
-main {
-  margin-top: 9%;
-  height:auto;
-}
-  
-div {
-  margin: 3%;
-}
-  
 label {
   width: 7em;  
   display: inline-block;
@@ -37,7 +28,12 @@ label {
   font-size: 18px;
   color: rgb(255, 251, 196);
 }
+
+.inp {
+  margin: 3%;
   
+}
+
 input {
   width: 40%;
   height: 35px;
@@ -49,11 +45,11 @@ input {
   font-family: Raleway, sans-serif;
   font-size: 18px;
 }
-  
+
 input[type="text"]:focus {
   background-color:#FFFFCC;
 }
-  
+
 input[type="submit"] {
   width: 15%;
   height:45px;
@@ -75,7 +71,7 @@ input[type="submit"]:hover {
   font-weight: 300;
 }
   
-  
+
 p {
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -83,48 +79,91 @@ p {
   text-align: left;
   line-height: 1.5em;
   margin:30px;
-  padding-top: 30px;
-  padding-bottom:30px
+  padding-top: 3px;
+  padding-left: 4px;
+  padding-bottom: 12px;
 }
-  
 
 
-/*.hidden { 
-  visibility: hidden; 
-  opacity: 0; 
-} 
-.showing { 
-  visibility: showing; 
-  opacity: 1; 
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showing {
+  visibility: showing;
+  opacity: 1;
 }
 
 #overlay {
-  position: absolute; 
-  background-color: rgba(0,0,0,0.5); 
-  top: 0; 
-  left: 0; 
-  width: 100vw; 
+  position: absolute;
+  background: radial-gradient(200% 100% at bottom center, #f7f7b6, #e96f92, #75517d, #1b2947);
+  background: radial-gradient(220% 105% at top center, #1b2947 10%, #75517d 40%, #e96f92 65%, #7d3cd1);
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
-  transition-property: opacity, visibility; 
-  transition-duration: 1s; 
+  transition-property: opacity, visibility;
+  transition-duration: 1s;
   transition-timing-function: ease;
 }
 
-#overlay article {
-  box-sizing: border-box ; 
+#madlib {
+  border: 5px solid rgb(255,250,244);
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
   background: radial-gradient(200% 100% at bottom center, #f7f7b6, #e96f92, #75517d, #1b2947);
   background: radial-gradient(220% 105% at top center, #1b2947 10%, #75517d 40%, #e96f92 65%, #7d3cd1);
-  padding:20px; 
-  width:50vW; 
-  height:70vh; 
-  position: absolute; 
-  top:50%;
-  left:50%; 
-  transform:translate(-50%,-50%); 
-  overflow-y: scroll;
-  border-radius: 30px;
-  
-}*/
+  width: 800px;
+  height: 500px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+#madlibcontent {
+  padding-top: 40px;
+  display: block;
+  width: 700px;
+  height: 450px;
+  font-family: Raleway, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 42px;
+  color: #f5ffbe;
+}
+
+
+#retry {
+  width: 15%;
+  height:45px;
+  margin: 2%;
+  padding:10px;
+  float: right;
+  background-color: transparent;
+  border: 2px #ffe9bc solid;
+  color: #FFFF99;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+#retry :hover{
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #03e9f4, 0 0 15px #03e9f4, 0 0 27px #03e9f4, 0 0 39px #03e9f4;
+  background-position: 15px center;
+  font-weight: 300;
+}
+
 
 
 
@@ -135,18 +174,18 @@ p {
   border: 1.2px solid transparent; 
   border-bottom: 1px solid #fff;
   animation: light 3s linear infinite;
- } 
+} 
 
- .star::before{ 
+.star::before{ 
    content: ""; 
    position: absolute; 
    top: 1px; 
    left: -2px; 
    border: 1px solid transparent; 
    border-top: 4px solid #fff; 
- }
+}
  
- @keyframes light{
+@keyframes light{
   20%{ 
     opacity: 0.2;
   } 

@@ -1,72 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Build Mad Lib Script</title>
-        <script src="script.js" defer></script>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <main class = "starArea">
-            <article class="container2">
-                <form id =“myform”> 
-                    <div>   
-                        <label for =“noun1”> Noun </label> 
-                        <input type =“text” id=“noun1” name="noun1" required> 
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
 
-                    <div>
-                        <label for="integer1">Positive integer</label> 
-                        <input type="text" id="integer1" name="integer1" required> 
-                    </div>
+    <section id="container" class="starArea">
 
-                    <div>    
-                        <label for="noun2"> Noun</label> 
-                        <input type="text" id="noun2" name="noun2" required> 
-                    </div>  
+        <main>
+            <form id="myform">
+                <div class="inp">
+                    <label for="noun1">Noun</label>
+                    <input type="text" id="noun1">
+                </div>
 
-                    <div>
-                        <label for="integer2">Positive integer</label> 
-                        <input type="text" id="integer2" name="integer2" required>
-                    </div>
+                <div class="inp">
+                    <label for="num1">Positive integer</label>
+                    <input type="text" id="num1">
+                </div>    
 
-                    <div>
-                        <label for="noun3">Animal name</label> 
-                        <input type="text" id="noun3" name="noun3" required>
-                    </div>
+                <div class="inp">
+                    <label for="noun2">Noun</label>
+                    <input type="text" id="noun2">
+                </div>
 
-                    <div>
-                        <label for="adj2">Feelings</label> 
-                        <input type="text" id="adj2" name="adj2" required>
-                    </div>
+                <div class="inp">
+                    <label for="num2">Positive integer</label>
+                    <input type="text" id="num2">
+                </div>
 
-                    <div>    
-                        <input type="submit" value="Sent" class="open">
-                    </div>
+                <div class="inp">
+                    <label for="noun3">Animal name</label>
+                    <input type="text" name="" id="noun3">
+                </div>
+
+                <div class="inp">
+                    <label for="adj">Feelings</label>
+                    <input type="text" name="" id="adj">
+                </div>
                     
-                </form>
-            </section>
+                <div class="btnbox">
+                    <input type="submit" value="Go!!!" id="btn">
+                </div>
+            </form>
 
+            <article id="error" class="hidden"><p id="errorcontent"></p></article>
         </main>
-
-        <section id="overlay" class="showing">
-            <article>
-                <p id="madlib"></p>
-
+        <section id="overlay" class="hidden">
+            <article id="madlib" >
+                <p id="madlibcontent"></p>
+                <div id="retrybox">
+                    <button id="retry" class="close">Back Home</button>
+                </div> 
             </article>
         </section>
+    </section>
 
-        
-    </body>
 
-    <footer>
+
+    <footer>    
         <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
         <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
     </footer>
-
-    
-
-
-
+</body>
 </html>
