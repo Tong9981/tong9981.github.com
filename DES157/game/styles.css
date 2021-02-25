@@ -1,0 +1,143 @@
+
+header h1 {
+	color: rgb(134, 134, 134);
+	margin-left: 30px;
+    font-size: 50px;
+    transform: translate(2%, -1850%);
+    
+}
+
+body {
+    background-color: black;
+    font-family: Arial;
+    color: #333;  
+    line-height: 1.5em;   
+}
+
+#play { 
+    margin-top: 30px;
+    margin-left: 46%;
+    
+}
+
+#startgame, #quit,#roll, #rollagain, #pass,#play, #next {
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #ffe9bc;
+    background-color: white;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 18px;
+    width: 90px;
+}
+
+#startgame:hover, #quit:hover,#roll:hover, #rollagain:hover, #pass:hover,#play:hover, #next:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #03e9f4, 0 0 15px #03e9f4, 0 0 27px #03e9f4, 0 0 39px #03e9f4;
+}
+
+#startgame, #quit, #rollagain, #roll{
+    width: 200px;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.showing {
+    visibility: visible;
+    display: block;
+}
+
+img{
+    border-radius: 30px;
+}
+
+#back{
+    place-content: center;
+    position: relative;
+    margin: auto;
+    display: grid;
+    
+}
+
+button { 
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+}
+
+#gamecontrol, #score {
+    text-align: center;
+}
+
+#game {
+    background-color:#0099CC;
+    text-align: center;
+}
+#actions {
+    background-color: #0099CC;
+    text-align: center;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    padding:20px;
+    right:0;
+}
+    
+a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    padding-right:20px;
+}
+
+
+
+#page1 {
+    border: 5px solid rgb(255,250,244);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    background: #0099CC; 
+    height: 500px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+p {
+    font-size: 18px ;
+	line-height: 30px;
+	word-spacing: 1px;
+}
+
+#page2 {
+    border: 5px solid rgb(255,250,244);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    background: #0099CC; 
+    height: 500px;
+    width: 60%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+

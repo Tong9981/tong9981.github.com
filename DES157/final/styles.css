@@ -1,0 +1,148 @@
+body {
+	font-family: Arial;
+	color: #333;
+	padding-top: 230px;
+	background:#99CCCC;
+}
+
+header {
+	background:#0099CC;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 180px;
+}
+
+header h1 {
+	color: rgb(255, 255, 255);
+	margin-left: 30px;
+	font-size: 40px ;
+}
+
+header h2 {
+	text-align: center;
+}
+
+p {
+	line-height: 30px;
+	word-spacing: 1px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+section {
+	width: 95%;
+	margin: 0 auto 100px auto;
+	padding: 30px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+	border-radius: 12px;
+	background: #FF9966;
+	font-size: 18px ;
+	
+}
+article{
+	padding: 20px;
+}
+
+
+/*************** Navigation Styles ***************/
+header nav {
+	width: 95%;
+	margin: auto;
+	
+}
+
+header nav ul {
+	justify-content: center;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+header nav ul li {
+	width: 	30%;
+	box-sizing: border-box;
+	
+}
+
+header nav ul li:first-of-type{
+	border-left: none;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	display: block;
+	color: rgb(3, 3, 3);
+	text-transform: uppercase;
+	
+	font-size: 15px ;
+	padding: 10px;
+	
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+}
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+	
+	/*************** Frist Section Styles ***************/
+	#first article {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	
+	/*************** Second Section Styles ***************/
+	#second article {
+		display: flex;
+		align-items: flex-start;
+	}
+	/*************** Third Section Styles ***************/
+	#third article {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	/*************** Fifth Section Styles ***************/
+	#fifth article {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	#sixth article {
+		display: flex;
+		align-items: flex-start;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	section, header nav {
+		width: 52%;
+	}
+}
+
+
+
+footer {
+    display: flex;
+    padding: 40px 0px 40px 29%;
+    background: rgb(162,126,126);
+    color: #022B3A;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    list-style-type: none;
+}
+
+footer p {
+    padding: 0px 25px 0px 25px;
+}
