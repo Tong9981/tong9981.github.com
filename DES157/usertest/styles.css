@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(90,146,173);
+    margin:auto;
+  }
+
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+
+
+article {
+  justify-content: center;
+  background-color:rgb(253,249,238);
+  width: 90%;
+  height: 35%;
+  margin:auto;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  position: relative;
+  border-radius: 10px;
+}
+
+article h3{
+  margin-left: 2%;
+  padding-top: 2%;
+}
+
+
+article p{
+  margin-left: 2%;
+  padding-bottom: 2%;
+  
+}
+
+article h2 {
+  position: absolute;
+  margin-left: 2%; 
+}
+
+article time {
+  margin-left: 2%;
+  padding-top: 2%;
+}
+
+
+
+
+footer {
+    display: flex;
+    padding: 40px 0px 40px 29%;
+    background: rgb(162,126,126);
+    color: #022B3A;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    text-align: center;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+footer p, a {
+	text-decoration: none;
+    padding: 0px 25px 0px 25px;
+}
+
+@media only screen and (max-width: 701px) {
+
+   article {
+    justify-content: center;
+    width: 90%;
+    height: 35%;
+    margin:auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    position: relative;
+    border-radius: 10px;
+ }
+}
+
+@media only screen and (min-width: 700px) {
+  .last {
+    border-right: none;
+  }
+
+  nav ul li a {
+    font-size: 1vw;
+  }
+
+  article {
+    justify-content: center;
+    width: 50%;
+    height: 35%;
+    margin:auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  article h2 {
+    position: absolute;
+    margin-left: 2%;   
+  }
+  footer{
+    padding: 40px 0px 40px 28%;
+    background: rgb(162,126,126);
+    padding-top: 20px;
+    display: flex;
+  }
+  footer p {
+    font-size: 1.5vw;
+    padding: 0px 25px 0px 25px;
+  }
+}
+
+p{
+  color: rgb(49, 49, 49);
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  word-spacing: 1px;
+  line-height: 30px;
+  padding-top: 30px;
+}
