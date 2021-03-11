@@ -1,0 +1,390 @@
+#afterclick{
+    width: 100%;
+    background-image: url("images/backf.JPG");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+
+#head{
+    background:#0099CC;
+	width: 70px;
+	position: fixed;
+	top: 76%;
+	left: 88%;
+	height: 70px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+}
+
+#head h2 {
+	color: rgb(255, 255, 255);
+	font-size: 16px ;
+	text-align: center;
+	margin-top: 17%;
+}
+
+#mid{
+	margin-top: -5%;
+	margin-left: -20%;
+	width: 150%;
+}
+
+body {
+    background-color: black;
+    font-family: Arial;
+    color: #333;  
+    line-height: 1.5em;   
+}
+
+#play { 
+    margin-top: 47%;
+    margin-left: 46%;
+    position:fixed;
+    
+    
+}
+
+#play{
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgba(169,3,41, 0.8);
+    background-color: white;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 18px;
+    width: 190px;
+}
+
+#play:hover{
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #03e9f4, 0 0 15px #03e9f4, 0 0 27px #03e9f4, 0 0 39px #03e9f4;
+}
+
+
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.showing {
+    visibility: visible;
+    display: block;
+}
+
+
+
+
+
+button { 
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+}
+
+
+
+
+
+
+footer {
+    position:fixed;
+    bottom:0;
+    padding:20px;
+    right:0;
+}
+    
+a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    padding-right:20px;
+}
+
+
+
+#page1 {
+    border: 5px solid rgb(255,250,244);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    background: #0099CC; 
+    height: 500px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+p {
+    font-size: 18px ;
+	line-height: 30px;
+	word-spacing: 1px;
+}
+
+
+
+
+.slides li {
+	list-style:none;
+}
+.slides,
+.slides:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.slides li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+.slides li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation: titleAnimation 36s linear infinite 0s;
+    margin-left: -3%;
+}
+.slides li div h3 {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 200px;
+    padding: 0;
+    line-height: 200px;
+	color: rgba(169,3,41, 0.8);
+}
+.slides li:nth-child(1) span { 
+	background-image: url(images/kb-5.JPG) 
+}
+
+.slides li:nth-child(2) span {
+    background-image: url(images/kb-2.JPG);
+
+    animation-delay: 6s;
+}
+.slides li:nth-child(3) span {
+    background-image: url(images/kb-3.JPG);
+
+    animation-delay: 12s;
+}
+.slides li:nth-child(4) span {
+    background-image: url(images/kb-4.JPG);
+
+    animation-delay: 18s;
+}
+.slides li:nth-child(5) span {
+    background-image: url(images/kb-5.JPG);
+
+    animation-delay: 24s;
+}
+.slides li:nth-child(6) span {
+    background-image: url(images/kb-1.JPG);
+
+    animation-delay: 30s;
+}
+.slides li:nth-child(2) div {
+
+    animation-delay: 6s;
+}
+.slides li:nth-child(3) div {
+
+    animation-delay: 12s;
+}
+.slides li:nth-child(4) div {
+
+    animation-delay: 18s;
+}
+.slides li:nth-child(5) div {
+
+    animation-delay: 24s;
+}
+.slides li:nth-child(6) div {
+
+    animation-delay: 30s;
+}
+/* Animation for the images */
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	10% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 1;
+	    transform: scale(1.1);
+	}
+	25% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+
+
+
+
+/* Animation for the title */
+@keyframes titleAnimation { 
+	0% {
+	    opacity: 0;
+	    transform: translateY(200px);
+	}
+	8% {
+	    opacity: 1;
+	    transform: translateY(0px);
+	}
+	17% {
+	    opacity: 1;
+	    transform: scale(1);
+	}
+	19% { 
+		opacity: 0 
+	}
+	25% {
+	    opacity: 0;
+	    transform: scale(10);
+	}
+	100% { opacity: 0 }
+}
+
+.container1 {
+	text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+	margin: 0 auto 100px auto;
+	width: 45%;
+	padding: 2%;
+	text-align: center;
+	list-style:none;
+	
+	
+}
+.container1 li a {
+    color: rgb(241, 158, 158);
+    font: 18px sans-serif;
+    margin-left: 14px;
+}
+
+.container1 li a:hover{
+    color: #03e9f4;
+
+}
+
+
+.container1 li {
+    text-align: center;
+}
+
+#first{
+	width: 70%;
+	margin: 0 auto 160px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+	border-radius: 12px;
+	background: #FF9966;
+	font-size: 18px ;
+
+}
+#second{
+	width: 70%;
+	margin: 0 auto 160px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+	border-radius: 12px;
+	background: #FF9966;
+	font-size: 18px ;
+
+}
+#third{
+	width: 70%;
+	margin: 0 auto 160px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+	border-radius: 12px;
+	background: #FF9966;
+	font-size: 18px ;
+
+}
+#fourth {
+	margin: 0 auto 160px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+	border-radius: 12px;
+	background: #FF9966;
+	font-size: 18px ;
+	width: 30%;
+}
+#sixth{
+	width: 60%;
+	margin: 0 auto 160px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+	border-radius: 12px;
+	background: #FF9966;
+	font-size: 18px ;
+
+}
+#seventh{
+	width: 70%;
+	margin: 0 auto 160px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+	border-radius: 12px;
+	background: #FF9966;
+	font-size: 18px ;
+
+}
+#eighth{
+
+	margin: 0 auto 160px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+	border-radius: 12px;
+	background: #FF9966;
+	font-size: 18px ;
+	width: 30%;
+} 
+#ninth{
+	width: 70%;
+	margin: 0 auto 160px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+	border-radius: 12px;
+	background: #FF9966;
+	font-size: 18px ;
+
+}
